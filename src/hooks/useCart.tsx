@@ -39,6 +39,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     return [];
   });
 
+  // Acessar o estado anterior https://pt-br.reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state
   const prevCartRef = useRef<Product[]>();
 
   useEffect(() => {
